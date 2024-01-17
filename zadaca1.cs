@@ -16,7 +16,7 @@ namespace Zadaca
         }
     }
 
-    // Klasa Student nasljeđuje Osoba
+
     public class Student : Osoba
     {
         public List<int> Ocjene { get; set; }
@@ -46,7 +46,7 @@ namespace Zadaca
 
         public Ucitelj(string ime, string prezime, int id, List<string> predmeti) : base(ime, prezime, id)
         {
-            Predmeti = predmeti;
+           Predmeti = new List<string>();;
         }
 
         public void DodajOcjenuStudentu(Student student, int ocjena)
